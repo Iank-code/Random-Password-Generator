@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Personal Generator</title>
+
+    <link rel="stylesheet" href="main.css">
+    <script defer src="./Javascript/app.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h2>Random Password generator</h2>
+        <div class="passContainer">
+            <span id="result" readonly></span>
+            <button class="btn clipboard" id="clipboard"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clipboard-fill" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M10 1.5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-1Zm-5 0A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5v1A1.5 1.5 0 0 1 9.5 4h-3A1.5 1.5 0 0 1 5 2.5v-1Zm-2 0h1v1A2.5 2.5 0 0 0 6.5 5h3A2.5 2.5 0 0 0 12 2.5v-1h1a2 2 0 0 1 2 2V14a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V3.5a2 2 0 0 1 2-2Z"/>
+              </svg>
+            </button>
+        </div>
+        <div class="settings">
+
+            <div class="setting">
+                <label for="length">Password Length</label>
+                <input type="number" id="length" min="6" max="50" value="15">
+            </div>
+
+            <div class="setting">
+                <label for="uppercase">Include Uppercase</label>
+                <input type="checkbox" id="uppercase" checked>
+            </div>
+
+            <div class="setting">
+                <label for="lowercase">Include Lowercase</label>
+                <input type="checkbox" id="lowercase" checked>
+            </div>
+
+            <div class="setting">
+                <label for="number">Include Numbers</label>
+                <input type="checkbox" id="number" checked>
+            </div>
+
+            <div class="setting">
+                <label for="symbol">Include Symbols</label>
+                <input type="checkbox" id="symbol" checked>
+            </div>
+
+        </div>
+
+        <button class="btn" id="generateButton">Generate Random Password</button>
+    </div>
+</body>
+</html>

@@ -1,0 +1,49 @@
+$text: #000;
+$text2: #c0c0c0;
+
+*,html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+button{
+    cursor: pointer;
+}
+body{
+    .container{
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .passContainer{
+            #resutlSection{
+                background-color: white;
+                color: white;
+                width: 350px;
+            }
+            #result{
+                word-wrap: break-word;
+                max-width: calc(100% - 40px);
+            }
+        }
+
+        .settings{
+            .setting{
+                width: 25vw;
+                display: flex;
+                justify-content: space-between;
+                margin: 6px;
+
+                #length{
+                    width: 70px;
+                }
+            }
+        }
+
+        #generateButton{
+            width: 30vw;
+        }
+    }
+}
